@@ -21,6 +21,7 @@ class ColorItem extends Item<Object, Color> {
     void renderValue(JLabel label) {
         label.setText(getValue().toString());
         label.setBackground(getValue());
+        label.setOpaque(true);
         label.setIcon(null);
     }
     
